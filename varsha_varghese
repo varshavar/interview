@@ -1,0 +1,13 @@
+def square(n):
+    sq=0
+    while(n!=0):
+        r=n%10
+        n//=10
+        sq=sq+(pow(r,2))
+    if sq==1:
+        print("true")
+    elif sq<1:
+        print("false")
+    else:
+        square(sq)
+square(4)
